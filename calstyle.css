@@ -1,0 +1,104 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#calBody {
+    display: flex;
+    background-color: rgb(3, 34, 61);
+    flex-flow: column wrap;
+    padding: 4px;
+}
+
+#mainContainer {
+    border: 1px solid;
+    border-color: antiquewhite;
+    padding: 6px;
+}
+
+#calName {
+    color: blanchedalmond;
+    font-size: large;
+    font-weight: bold;
+    padding: 2px;
+    border-color: azure;
+    border-bottom: 1px solid;
+    margin: 16px;
+}
+
+#displayBox {
+    display: flex;
+    margin-bottom: 8px;
+}
+
+#display {
+    flex: 1 1 auto;
+    font-size: xx-large;
+    text-align: right;
+}
+
+#buttonContainer {
+    display: flex;
+    flex-flow: column wrap;
+    flex: 1 1 auto;
+    border: 1px solid;
+    border-color: blue;
+}
+
+#numopDiv {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+#numeralsDiv {
+    display: flex;
+    flex-flow: column wrap;
+    padding: 4px;
+    border: 1px solid;
+    flex: 2 1 auto;
+}
+
+#operatorsDiv {
+    display: flex;
+    flex-flow: column wrap;
+    padding: 4px;
+    border: 1px solid;
+    flex: 1 1 auto;
+}
+
+#othersDiv {
+    display: flex;
+    flex-flow: row wrap;
+    padding: 4px;
+}
+
+.btnNumRows {
+    display: flex;
+    flex: 1 1 auto;
+}
+
+.btnCal {
+    font-size: xx-large;
+    font-weight: 900;
+    flex: 1 1 auto;
+    padding: 8px;
+    border-radius: 8px;
+
+}
+
+.btnNumerals {
+    background-color: rgb(40, 59, 156);
+    color: aqua;
+
+}
+
+.btnOperator {
+    background-color: orange;
+    color: rgb(24, 37, 37);
+}
+
+.btnOther {
+    background-color: rgb(112, 193, 240);
+}
