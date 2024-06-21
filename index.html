@@ -5,13 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculator</title>
     <link rel="stylesheet" href="./calstyle.css">
-    <script src="./caljscript.js"></script>
+    <script src="./caljscript.js" defer></script>
 </head>
 <body>
     <div id="calBody">
         <div id="calName">Calci 1.0</div>
         <div id="mainContainer">
-            <div id="displayBox"><input type="text" value="0" id="display"></div>
+            <div id="displayBox">
+                <input type="text" id="displayInput" placeholder="0" readonly>
+                <input type="text" id="displayResult" placeholder="0" readonly>
+            </div>
             <div id="buttonContainer">
                 <div id="numopDiv">
                     <div id="numeralsDiv">
@@ -31,20 +34,20 @@
                             <button class="btnNumerals btnCal">1</button>
                         </div>
                         <div class="btnNumRows">
-                            <button class="btnNumerals btnCal">.</button>
+                            <button class="btnNumerals btnCal" id="dot">.</button>
                             <button class="btnNumerals btnCal">0</button>
                         </div>
                     </div>
                     <div id="operatorsDiv">
-                        <button class="btnOperator btnCal">÷</button>
-                        <button class="btnOperator btnCal">x</button>
+                        <button class="btnOperator btnCal">/</button>
+                        <button class="btnOperator btnCal">*</button>
                         <button class="btnOperator btnCal">-</button>
                         <button class="btnOperator btnCal">+</button>
                     </div>
                 </div>
                 <div id="othersDiv">
-                    <button class="btnOther btnCal">AC</button>
-                    <button class="btnOther btnCal">=</button>
+                    <button class="btnOther btnCal" id="btnClear">AC</button>
+                    <button class="btnOther btnCal" id="btnEquals">=</button>
                 </div>
             </div>
         </div>
